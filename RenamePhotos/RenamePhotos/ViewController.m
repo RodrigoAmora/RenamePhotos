@@ -24,7 +24,26 @@
 }
 
 -(void)renamePhotos:(id)sender {
+    NSString *path = tfDirectory.stringValue;
+    NSString *namePhotos = tfName.stringValue;
     
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSArray *fileList = [fileManager contentsOfDirectoryAtPath:path error:nil];
+    NSMutableString *list = [[NSMutableString alloc] init];
+    
+    for (int i = 0; i < fileList.count; i++) {
+        NSString *fileName = [[NSString alloc] initWithFormat:@"%@/%@", path,[fileList objectAtIndex:i]];
+        NSString *newFile = [[NSString alloc] initWithFormat:@"%@/%@ %i.jpg", path, namePhotos,i];
+
+        if ([fileName containsString:@".jpg"]) {
+            [fileManager moveItemAtPath:fileName toPath:newFile error:nil];
+            [list appendFormat:@"%@ -> %@ \n", fileName, newFile];
+            NSLog(@"Photo renamed -> %@", [fileList objectAtIndex:i]);
+        }
+    }
+    
+    listPhotos.string = list;
 }
 
 -(void)selectDirectory:(id)sender {
