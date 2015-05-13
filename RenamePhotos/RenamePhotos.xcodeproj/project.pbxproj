@@ -13,6 +13,11 @@
 		D23B5B461B02CD0300397D32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23B5B451B02CD0300397D32 /* Images.xcassets */; };
 		D23B5B491B02CD0300397D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23B5B471B02CD0300397D32 /* Main.storyboard */; };
 		D23B5B551B02CD0300397D32 /* RenamePhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23B5B541B02CD0300397D32 /* RenamePhotosTests.m */; };
+		D285F20D1B0300A800F3ED52 /* icon-16pt-1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D285F2081B0300A800F3ED52 /* icon-16pt-1x.png */; };
+		D285F20E1B0300A800F3ED52 /* icon-32pt-1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D285F2091B0300A800F3ED52 /* icon-32pt-1x.png */; };
+		D285F20F1B0300A800F3ED52 /* icon-32pt-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D285F20A1B0300A800F3ED52 /* icon-32pt-2x.png */; };
+		D285F2101B0300A800F3ED52 /* icon-128pt-1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D285F20B1B0300A800F3ED52 /* icon-128pt-1x.png */; };
+		D285F2111B0300A800F3ED52 /* icon-128pt-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D285F20C1B0300A800F3ED52 /* icon-128pt-2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		D23B5B4E1B02CD0300397D32 /* RenamePhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RenamePhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23B5B531B02CD0300397D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D23B5B541B02CD0300397D32 /* RenamePhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenamePhotosTests.m; sourceTree = "<group>"; };
+		D285F2081B0300A800F3ED52 /* icon-16pt-1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-16pt-1x.png"; sourceTree = "<group>"; };
+		D285F2091B0300A800F3ED52 /* icon-32pt-1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-32pt-1x.png"; sourceTree = "<group>"; };
+		D285F20A1B0300A800F3ED52 /* icon-32pt-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-32pt-2x.png"; sourceTree = "<group>"; };
+		D285F20B1B0300A800F3ED52 /* icon-128pt-1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128pt-1x.png"; sourceTree = "<group>"; };
+		D285F20C1B0300A800F3ED52 /* icon-128pt-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128pt-2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 		D23B5B2F1B02CD0200397D32 = {
 			isa = PBXGroup;
 			children = (
+				D285F2071B03008700F3ED52 /* icons */,
 				D23B5B3A1B02CD0300397D32 /* RenamePhotos */,
 				D23B5B511B02CD0300397D32 /* RenamePhotosTests */,
 				D23B5B391B02CD0300397D32 /* Products */,
@@ -114,6 +125,18 @@
 				D23B5B531B02CD0300397D32 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D285F2071B03008700F3ED52 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				D285F2081B0300A800F3ED52 /* icon-16pt-1x.png */,
+				D285F2091B0300A800F3ED52 /* icon-32pt-1x.png */,
+				D285F20A1B0300A800F3ED52 /* icon-32pt-2x.png */,
+				D285F20B1B0300A800F3ED52 /* icon-128pt-1x.png */,
+				D285F20C1B0300A800F3ED52 /* icon-128pt-2x.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +219,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D285F20E1B0300A800F3ED52 /* icon-32pt-1x.png in Resources */,
+				D285F2111B0300A800F3ED52 /* icon-128pt-2x.png in Resources */,
+				D285F2101B0300A800F3ED52 /* icon-128pt-1x.png in Resources */,
 				D23B5B461B02CD0300397D32 /* Images.xcassets in Resources */,
+				D285F20D1B0300A800F3ED52 /* icon-16pt-1x.png in Resources */,
 				D23B5B491B02CD0300397D32 /* Main.storyboard in Resources */,
+				D285F20F1B0300A800F3ED52 /* icon-32pt-2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +435,7 @@
 				D23B5B5A1B02CD0300397D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D23B5B5B1B02CD0300397D32 /* Build configuration list for PBXNativeTarget "RenamePhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +444,7 @@
 				D23B5B5D1B02CD0300397D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
