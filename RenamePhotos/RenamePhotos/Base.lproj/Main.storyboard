@@ -758,7 +758,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btRename" destination="ePh-w6-dh3" id="tYw-Sy-C4M"/>
+                        <outlet property="btRename" destination="ePh-w6-dh3" id="mvL-T1-b9o"/>
                         <outlet property="listPhotos" destination="nVm-T3-FSB" id="lWX-pv-9je"/>
                         <outlet property="tfName" destination="Po3-ke-hDB" id="esJ-gq-kcC"/>
                     </connections>
