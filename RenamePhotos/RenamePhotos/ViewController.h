@@ -15,6 +15,7 @@
 @property(nonatomic, strong) IBOutlet NSTextField *tfDirectory, *tfName;
 
 -(IBAction)renamePhotos:(id)sender;
+-(IBAction)selectDirectory:(id)sender;
 
 @end
 
