@@ -671,7 +671,97 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-D3-YFD">
+                                <rect key="frame" x="18" y="233" width="123" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select a directory:" id="hv8-2E-FdM">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGZ-8Y-n4k">
+                                <rect key="frame" x="147" y="228" width="313" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8mL-jj-bYI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePh-w6-dh3">
+                                <rect key="frame" x="187" y="166" width="106" height="23"/>
+                                <buttonCell key="cell" type="smallSquare" title="Rename" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OdI-XH-zVK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="renamePhotos:" target="XfG-lQ-9wD" id="S6x-x7-qsk"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRD-85-Ix2">
+                                <rect key="frame" x="20" y="201" width="121" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Enter the name:" id="2v1-cA-dM3">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Po3-ke-hDB">
+                                <rect key="frame" x="147" y="198" width="313" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="gWz-uu-c2t">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <scrollView ambiguous="YES" misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU2-ls-xY6">
+                                <rect key="frame" x="20" y="24" width="440" height="135"/>
+                                <clipView key="contentView" ambiguous="YES" misplaced="YES" id="10f-Oa-80z">
+                                    <rect key="frame" x="1" y="1" width="223" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="nVm-T3-FSB">
+                                            <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="438" height="133"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="438" height="133"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="W5L-xI-J4R">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="87w-CF-mxo">
+                                    <rect key="frame" x="224" y="1" width="15" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Jga-D3-YFD" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="4gt-i8-lnv"/>
+                            <constraint firstItem="GGZ-8Y-n4k" firstAttribute="leading" secondItem="Jga-D3-YFD" secondAttribute="trailing" constant="8" id="BbL-9Z-oVd"/>
+                            <constraint firstItem="FU2-ls-xY6" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="MoT-rf-JPw"/>
+                            <constraint firstItem="FU2-ls-xY6" firstAttribute="top" secondItem="ePh-w6-dh3" secondAttribute="bottom" constant="8" id="StB-Ej-kYP"/>
+                            <constraint firstAttribute="bottom" secondItem="FU2-ls-xY6" secondAttribute="bottom" constant="24" id="UBv-yn-8ls"/>
+                            <constraint firstAttribute="trailing" secondItem="GGZ-8Y-n4k" secondAttribute="trailing" constant="20" id="VW3-w9-unS"/>
+                            <constraint firstItem="oRD-85-Ix2" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="22" id="adj-Sx-pzA"/>
+                            <constraint firstAttribute="trailing" secondItem="Po3-ke-hDB" secondAttribute="trailing" constant="20" id="jnl-iT-NoQ"/>
+                            <constraint firstItem="Po3-ke-hDB" firstAttribute="leading" secondItem="oRD-85-Ix2" secondAttribute="trailing" constant="8" id="oSG-AF-ww4"/>
+                            <constraint firstAttribute="centerX" secondItem="ePh-w6-dh3" secondAttribute="centerX" id="t4i-4Y-f7L"/>
+                            <constraint firstAttribute="trailing" secondItem="FU2-ls-xY6" secondAttribute="trailing" constant="20" id="xKD-8N-6qL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btRename" destination="ePh-w6-dh3" id="tYw-Sy-C4M"/>
+                        <outlet property="listPhotos" destination="nVm-T3-FSB" id="lWX-pv-9je"/>
+                        <outlet property="tfName" destination="Po3-ke-hDB" id="esJ-gq-kcC"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

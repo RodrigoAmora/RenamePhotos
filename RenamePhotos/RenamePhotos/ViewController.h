@@ -10,6 +10,11 @@
 
 @interface ViewController : NSViewController
 
+@property(nonatomic, strong) IBOutlet NSButton *btRename;
+@property(nonatomic, strong) IBOutlet NSTextView *listPhotos;
+@property(nonatomic, strong) IBOutlet NSTextField *tfDirectory, *tfName;
+
+-(IBAction)renamePhotos:(id)sender;
 
 @end
 
