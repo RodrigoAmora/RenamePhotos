@@ -34,7 +34,7 @@
     
     for (int i = 0; i < fileList.count; i++) {
         NSString *fileName = [[NSString alloc] initWithFormat:@"%@/%@", path,[fileList objectAtIndex:i]];
-        NSString *newFile = [[NSString alloc] initWithFormat:@"%@/%@ %i.jpg", path, namePhotos,i];
+        NSString *newFile = [[NSString alloc] initWithFormat:@"%@/%@-%i.jpg", path, namePhotos,i];
 
         if ([fileName containsString:@".jpg"]) {
             [fileManager moveItemAtPath:fileName toPath:newFile error:nil];
